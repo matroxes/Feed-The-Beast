@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed The Beast</title>
+</head>
+<body>
+    <div class="updates">
+        <h2>Улучшения</h2>
+        <div class="container">
+            <div class="line line-1">
+                <img src="running-ninja.png" title="Ускоряет пердвижение персонажа" id="img-1">
+                <div class="blocks">
+                    <div class="block-1 block"></div>
+                    <div class="block-2 block"></div>
+                    <div class="block-3 block"></div>
+                </div>
+                <p class="sign" id="sign-1">50$</p>
+            </div>
+            <div class="line line-2">
+                <img src="expand.png" title="Увеличивает размеры персонажа" id="img-2">
+                <div class="blocks">
+                    <div class="block-4 block"></div>
+                    <div class="block-5 block"></div>
+                    <div class="block-6 block"></div>
+                </div>
+                <p class="sign" id="sign-2">50$</p>
+            </div>
+            <div class="line line-3">
+                <img src="apple-seeds.png" title="Новые звёзды дают больше очков" id="img-3">
+                <div class="blocks">
+                    <div class="block-7 block"></div>
+                    <div class="block-8 block"></div>
+                    <div class="block-9 block"></div>
+                </div>
+                <p class="sign" id="sign-3">50$</p>
+            </div>
+            <div class="line line-4">
+                <img src="backward-time.png" title="Ускоряет появление новых яблок" id="img-4">
+                <div class="blocks">
+                    <div class="block-10 block"></div>
+                    <div class="block-11 block"></div>
+                    <div class="block-12 block"></div>
+                </div>
+                <p class="sign" id="sign-4">50$</p>
+            </div>
+        </div>
+        <p id="score">Очков улучшения: <span id="points"></span></p>
+    </div>
+
+<div class="wrapper">
+    <canvas id="canvas"></canvas>
+</div>
+
+<p id="win">Наберите еще <span id="pointsWin"></span> очков для победы</p>
+
+<div class="explain">
+    <h2 class="coll">Собирайте звёзды</h2>
+    <div class="img-container">
+    <img src="arrowKeys.png" class="arrows"> <img src="star.png" class="star-img">
+    </div>
+    <h2>Делайте улучшения</h2>
+    <img src="upd.png" class="screenshotBar">
+</div>
+
+
+<div class="wictory wictory-hidden">
+    <h2 class="youWin">Ты победил!</h2>
+    <button class="again">Заново</button>
+</div>
+
+    <script src="setup.js"></script>
+    <script src="upgrades.js"></script>
+</body>
+</html>
