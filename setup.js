@@ -11,7 +11,7 @@ const wictory = document.querySelector('.wictory')
 
 const btn = document.querySelector('.again')
 
-addEventListener('click', () => {
+btn.addEventListener('click', () => {
     location.reload();
 })
 
@@ -21,12 +21,13 @@ function animate() {
     setTimeout(() => {
     c.clearRect(0, 0, canvas.width, canvas.height)
     countPrice()
-    pointsWin.innerHTML = 500 - score
+    pointsWin.innerHTML = 250 - score
     if (pointsWin.innerHTML <= 0) {
+        pointsWin.innerHTML = 0
         wictory.classList.remove('wictory-hidden')
         wictory.classList.add('wictory-active')
     } else {
-        if (frame >= 300 - foodSpeedMinus) {
+        if (frame >= 270 - foodSpeedMinus) {
         foodArray.push( new Food(15 + foodSizePlus, 1 + foodPointsPlus, foodSizePlus))
         frame = 0;
     }
